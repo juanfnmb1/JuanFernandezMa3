@@ -1,0 +1,11 @@
+@import "_variables";
+@import "_mixins";
+@import "_effects";
+//imports the scss files I created
+
+//includes the mixins I made
+@include docStyling;
+@include hoverEffect;
+@include gridStyling;
+@include timeLineLeft;
+@include textSwap;

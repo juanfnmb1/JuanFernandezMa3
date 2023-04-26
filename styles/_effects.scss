@@ -1,0 +1,61 @@
+@mixin textSwap {
+  .label:after {
+    content: $contentBefore;
+    display: table; // keeps the background color wrapped tight //
+    margin: $tableMargin; // keeps the table centered //
+    padding: $HAFPadding;
+    background-color: $bodyBC;
+    box-shadow: $boxShad;
+    color: $textColor;
+    font-size: $fontSize;
+  }
+  .label:hover:after {
+    content: $contentAfter;
+    display: table; /* keep the background color wrapped tight */
+    margin: $tableMargin; /* keep the table centered */
+    padding: $HAFPadding;
+    background-color: $bodyBC;
+    box-shadow: $boxShad;
+    color: $textColor;
+    font-size: $fontSize;
+  }
+} //effect that makes the footer text change on hover
+
+@mixin hoverEffect {
+  .container {
+    position: $relative;
+  }
+
+  .image {
+    opacity: 1;
+    height: auto;
+    transition: $transition;
+    backface-visibility: hidden;
+  }
+
+  .middle {
+    transition: $transition;
+    opacity: $none;
+    position: $absolute;
+    top: 42%;
+    left: 50%;
+    transform: $animation;
+    -ms-transform: $animation;
+    text-align: center;
+  }
+
+  .container:hover .image {
+    opacity: 0.5;
+  }
+
+  .container:hover .middle {
+    opacity: 1;
+  }
+
+  .text {
+    background-color: $numberColor;
+    color: $bodyBC;
+    font-size: 90%;
+    padding: 8%;
+  }
+} //effect that reveals a caption on top of the images on hover

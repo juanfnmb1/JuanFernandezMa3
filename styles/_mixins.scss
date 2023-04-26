@@ -1,0 +1,153 @@
+//general style for the document
+@mixin docStyling {
+  body {
+    background-color: $bodyBC;
+    font-family: $fontFam;
+    text-align: center;
+  }
+  h2 {
+    text-shadow: $tShad;
+    color: $textColor;
+  }
+  h3 {
+    text-shadow: $tShad;
+  }
+  #header {
+    padding: 60px;
+    background-image: url(../images/ucf.jpg);
+    opacity: $HAFOpacity;
+    background-position-y: $radAP;
+    background-size: cover;
+  } //styling for the header with a background image
+
+  .heading {
+    display: table; // keeps the background color wrapped tight //
+    margin: $tableMargin; // keeps the table centered */
+    padding: $HAFPadding;
+    background-color: $bodyBC;
+    box-shadow: $boxShad;
+    color: $textColor;
+    font-size: $fontSize;
+  } //styling for the text inside the header
+
+  #footer {
+    margin-top: $marginT;
+    padding: 20px;
+    background-image: url(../images/future.jpg);
+    opacity: $HAFOpacity;
+    background-position-y: $radAP;
+    background-size: cover;
+    font-size: $fontSize;
+  } //gives footer a background image
+}
+
+@mixin gridStyling {
+  #grid {
+    display: grid;
+    grid-template-areas:
+      "jrn"
+      "img1"
+      "img2"
+      "img3"
+      "img4"
+      "img5"
+      "img6";
+    margin-top: $marginT;
+    background-color: $gridBC;
+    padding: $gridSpace;
+    grid-gap: $gridSpace;
+  } //general grid layout for small screens
+  .grid-item {
+    background-color: $gridIBC;
+    border: $gridBorder;
+  }
+  .future {
+    grid-area: ft;
+  }
+  .journey {
+    grid-area: jrn;
+  }
+  .image1 {
+    grid-area: img1;
+  }
+
+  .image2 {
+    grid-area: img2;
+  }
+
+  .image3 {
+    grid-area: img3;
+  }
+  .image4 {
+    grid-area: img4;
+  }
+  .image5 {
+    grid-area: img5;
+  }
+  .image6 {
+    grid-area: img6;
+  } //assigns a grid area to each class, which can be manipulated for other screen sizes
+
+  img {
+    width: 70%;
+    margin-bottom: 50px;
+    border: $imgBorder;
+  }
+
+  #timeline {
+    margin-left: 1.5%;
+    text-align: left;
+    font-size: $largest;
+    font-weight: $heavy;
+    color: $numberColor;
+  } //design for the numbers above the images
+  @media screen and (min-width: 500px) {
+    #grid {
+      grid-template-areas:
+        "jrn jrn"
+        "img1 img2"
+        "img3 img4"
+        "img5 img6";
+    } //grid design for tablet sizes
+  }
+  @media screen and (min-width: 1024px) {
+    #grid {
+      grid-template-areas:
+        "jrn img1 img2 img3"
+        "jrn img4 img5 img6";
+    } //grid design for desktop sizes
+  }
+}
+
+@mixin timeLineLeft {
+  //design for the timeline on the left of the screen
+  #text1 {
+    width: 90%;
+    margin-left: 5%;
+  } //makes the entire timeline content smaller and aligns it better
+
+  ul {
+    line-height: 1.5em;
+    margin: $ulMargin;
+    padding: $none;
+  } //entire list style
+  li {
+    margin-top: $marginT;
+    list-style: none;
+    position: $relative;
+    padding: $listPadding;
+    color: $textColor;
+  } //timeline style
+  ul.outline-round li::before {
+    content: "";
+    position: $absolute;
+    left: $none;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: $radAP;
+    -moz-border-radius: $radAP;
+    -webkit-border-radius: $radAP;
+    border: $circBorder;
+  } //custom bulletpoints for my timeline
+}

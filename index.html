@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Major Assignment 3</title>
+    <!--title on browser tab-->
+    <link rel="icon" href="images/ma3_icon.png" />
+    <!--browser tab icon I created for this assignment-->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!--imports style -->
+  </head>
+  <body>
+    <div id="header">
+      <p class="heading">My Journey</p>
+      <!--nice heading which has a background that will be added with scss-->
+      <h3>Hover over the images for their captions!</h3>
+    </div>
+    <div id="grid">
+      <!--sets everything on the document as a grid-->
+      <div class="grid-item journey">
+        <div id="text1">
+          <h2>How did I get Here?</h2>
+          <ul class="outline-round">
+            <!--a small timeline that will be set to the left-->
+            <li>
+              I am originally from Havana Cuba. I migrated with my parents to
+              the United States in 2007 with no more than a bookbag. I didn't
+              speak fluent English, but I learned fast.
+            </li>
+            <li>
+              My tech journey started in Middle School. I built my first video
+              game when I was 12 years old! It was called Mortal Kombat VS
+              Street Fighter. I also took two Honors IT classes, and saw that IT
+              related subjects really caught my attention.
+            </li>
+            <li>
+              My freshman year of High School, I created made my own Youtube
+              Channel! I also took an Adobe Photoshop class that year out of
+              curiosity. I loved it so much that ended up taking an IT class for
+              every subsequent year of High School! These included Graphic
+              Design, and Video Production classes.
+            </li>
+            <li>
+              After I graduated, I continued my studies at UCF because it is a
+              good school and it is close to home. My major used to be in
+              Computer Science. I realized though, that it requires lots of
+              math! I therefore, wanted to find an IT related career where not
+              too much mas was needed. I switched to a Digital Media major with
+              a Game Design track!
+            </li>
+            <li>
+              My sophmore year of college, I had a cousin teach me how to build
+              a website just for fun. I started to build websites for my family
+              and then for small local businesses. I realized that I liked
+              building websites more than I did games. Which brought me to my
+              current state as a Junior UCF student with a Web Design track.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-item image1">
+        <!--the remainding grids will each have an image-->
+        <p id="timeline">(1)</p>
+        <!--these numbers will be for the images, therefore users have a sense of which image to look at first-->
+        <div class="container">
+          <img src="images/young_me.jpg" class="image" />
+          <div class="middle">
+            <div class="text">I migrated from Cuba in 2007.</div>
+          </div>
+        </div>
+        <!--the container, middle, and text div's are used for a hover effect on the images-->
+      </div>
+      <div class="grid-item image2">
+        <p id="timeline">(2)</p>
+        <div class="container">
+          <img src="images/my_game.jpg" class="image" />
+          <div class="middle">
+            <div class="text">At the age of 12, I took on Game Design.</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item image3">
+        <p id="timeline">(3)</p>
+        <div class="container">
+          <img src="images/youtube.jpg" class="image" />
+          <div class="middle">
+            <div class="text">
+              Two years later, I created my own Youtube channel.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item image4">
+        <p id="timeline">(4)</p>
+        <div class="container">
+          <img src="images/graphic_design.jpg" class="image" />
+          <div class="middle">
+            <div class="text">I started Graphic Design in High School.</div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item image5">
+        <p id="timeline">(5)</p>
+        <div class="container">
+          <img src="images/car_dealer.jpg" class="image" />
+          <div class="middle">
+            <div class="text">
+              After graduating High School, I began to study Web Design in
+              college.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item image6">
+        <p id="timeline">(6)</p>
+        <div class="container">
+          <img src="images/current_me.jpg" class="image" />
+          <div class="middle">
+            <div class="text">Finally, this is UCF junior me!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <!--a nice footer which will also have a background to match the heading-->
+      <p><span class="label"></span></p>
+      <!--the span will be used to create an effect that changes its text content on hover-->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+//the variables I created for content that repeated itself or was too long, it's easier to call a single variable name than repeat content or have large content
+$bodyBC: rgb(238, 238, 225);
+$fontFam: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+$boxShad: 5px 10px rgb(128, 111, 87);
+$textColor: rgb(71, 44, 27);
+$tShad: 2px 1px rgb(167, 156, 141);
+$radAP: 50%;
+$gridBorder: 5px inset rgb(102, 64, 12);
+$imgBorder: 7px outset rgb(102, 64, 12);
+$circBorder: 2px solid rgb(102, 64, 12);
+$numberColor: rgb(102, 64, 12);
+$HAFPadding: 30px;
+$marginT: 1%;
+$fontSize: 60px;
+$tableMargin: 0px auto 0px auto;
+$gridBC: rgb(170, 157, 141);
+$gridIBC: rgba(236, 234, 234, 0.8);
+$gridSpace: 10px;
+$none: 0;
+$listPadding: 0 0 0 20px;
+$contentBefore: "What's Next?";
+$contentAfter: "Who Knows!";
+$animation: translate(-50%, -50%);
+$transition: 0.5s ease;
+$ulMargin: 5px 0 15px;
+$relative: relative;
+$absolute: absolute;
+$HAFOpacity: 0.7;
+$heavy: bold;
+$largest: xx-large;
